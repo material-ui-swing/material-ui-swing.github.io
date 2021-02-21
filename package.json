@@ -1,0 +1,24 @@
+{
+  "name": "material-ui-swing-site",
+  "version": "0.0.1",
+  "description": "material-ui-swing official site",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-ui-swing/material-ui-swing.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/material-ui-swing/material-ui-swing.github.io/issues"
+  },
+  "homepage": "https://github.com/material-ui-swing/material-ui-swing.github.io/issues#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "postcss-cli": "^5.0.1"
+  }
+}
