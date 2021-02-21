@@ -16,7 +16,9 @@
     "url": "https://github.com/material-ui-swing/material-ui-swing.github.io/issues"
   },
   "homepage": "https://github.com/material-ui-swing/material-ui-swing.github.io/issues#readme",
-  "dependencies": {},
+  "dependencies": {
+    "postcss": "^8.2.6"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.6",
     "postcss-cli": "^8.3.1"
