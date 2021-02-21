@@ -1,0 +1,4 @@
+baseURL = "https://material-ui-swing.github.io"
+languageCode = "en-us"
+title = "Material-UI-Swing"
+theme = "docsy" 
