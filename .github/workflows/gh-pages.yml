@@ -1,4 +1,4 @@
-name: github pages
+name: Build w/ Hugo & deploy to GitHub Pages
 
 on:
   push:
@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: recursive  # Fetch the Docsy theme
-          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -32,11 +32,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
       - run: npm ci
-      - run: hugo --minify
+
+      - name: Build
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN }}
+          deploy_key: ${{ secrets.TOKEN }}
+          # or github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
