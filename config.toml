@@ -2,7 +2,7 @@ baseURL = "https://material-ui-swing.github.io"
 languageCode = "en-us"
 title = "Material-UI-Swing"
 
-theme = ["docsy"]   
+theme = ["docsy"]
 
 enableRobotsTXT = true
 
@@ -82,13 +82,13 @@ privacy_policy = "https://policies.google.com/privacy"
 # This menu appears only if you have at least one [params.versions] set.
 version_menu = "Releases"
 
-# Flag used in the "version-banner" partial to decide whether to display a 
+# Flag used in the "version-banner" partial to decide whether to display a
 # banner on every page indicating that this is an archived version of the docs.
 # Set this flag to "true" if you want to display the banner.
 archived_version = false
 
 # The version number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the 
+# Used in the "version-banner" partial to display a version number for the
 # current doc set.
 version = "0.1"
 
@@ -125,7 +125,7 @@ prism_syntax_highlighting = false
 # Enable to show the side bar menu in its compact state.
 sidebar_menu_compact = false
 #  Set to true to disable breadcrumb navigation.
-breadcrumb_disable = false
+breadcrumb_disable = true
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
@@ -144,7 +144,7 @@ yes = 'Glad to hear it! Please <a href="https://github.com/vincenzopalazzo/mater
 no = 'Sorry to hear that. Please <a href="https://github.com/vincenzopalazzo/material-ui-swing/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
-# If you want this feature, but occasionally need to remove the Reading time from a single page, 
+# If you want this feature, but occasionally need to remove the Reading time from a single page,
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
 enable = false
